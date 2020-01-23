@@ -24,9 +24,12 @@ while counter < cart.length
       :clearance => cart[counter][:clearance],
       :count => 1
     }
+    new_cart << new_cart_item
   end
     counter += 1
+  end
 end
+
 
 # return: [{:item => "AVOCADO", :price => 3.00, :clearance => true, :counter => 3}]
 # {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3}
