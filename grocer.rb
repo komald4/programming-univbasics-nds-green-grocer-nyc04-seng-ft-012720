@@ -30,15 +30,12 @@ while counter < cart.length
   end
   new_cart
 end
-
-
 # return: [{:item => "AVOCADO", :price => 3.00, :clearance => true, :counter => 3}]
 # {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3}
 
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  
+
 end
 
 def apply_clearance(cart)
