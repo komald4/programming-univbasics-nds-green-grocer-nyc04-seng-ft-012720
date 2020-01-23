@@ -17,12 +17,19 @@ while counter < cart.length
   new_cart_item = find_item_by_name_in_collection(cart[counter][:item], new_cart)
   if new_cart_item != nil
     new_cart_item[:count] += 1
+  else
+    new_cart_item = {
+      :key => cart[counter][:item],
+      :price => cart[counter][:price],
+      :clearance => cart[counter][:clearance],
+      :count => 1
+    }
   end
     counter += 1
 end
 
 # return: [{:item => "AVOCADO", :price => 3.00, :clearance => true, :counter => 3}]
-# {:item => "AVOCADO", :price => 3.00, :clearance => true, :counter => 3}
+# {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3}
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
