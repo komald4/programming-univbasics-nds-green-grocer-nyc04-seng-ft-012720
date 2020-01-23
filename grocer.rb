@@ -19,7 +19,7 @@ while counter < cart.length
     new_cart_item[:count] += 1
   else
     new_cart_item = {
-      :key => cart[counter][:item],
+      :item => cart[counter][:item],
       :price => cart[counter][:price],
       :clearance => cart[counter][:clearance],
       :count => 1
